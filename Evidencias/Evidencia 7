@@ -1,0 +1,77 @@
+#LISTAS
+
+#NOMBRES FAMILIARES
+Lista1= ["Antonio","Iris","Ariel","José","Víctor"]
+
+
+#TEMPERATURAS MES JUNIO 2023
+Lista2= [25,24,27,18,21,27,20,30,23,14,14,13,15,17,18,18,14,19,13,12,13,20,21,21,22,23,21,17,17,19]
+          
+
+#CIUDADES VISITADAS
+Lista3= ["Córdoba","Carlos Paz","Rosario","Mendoza","Santiago","Misiones","CABA"]
+
+
+#FECHAS Y EVENTOS IMPORTANTES
+Lista4 = ['2 de Abril Veteranos y caídos de Malvinas', '1 de Mayo Día del trabajador', '25 de Mayo Día de la Revolución','20 de Junio Día de la Bandera', '9 de Julio Día de la independencia']
+
+
+#1
+Lista1.sort()
+
+#2
+Lista2.sort()
+
+#3
+Lista2.extend([23,28,26,29,19,16,13,22,16,14,11,9,8,17,16])
+
+#4
+Lista1
+del Lista1[4]
+
+Lista1
+del Lista1[3]
+
+#5
+Lista3
+del Lista3[4]
+
+#6
+print(Lista1)
+print(Lista2)
+print(Lista3)
+print(Lista4)
+
+
+
+
+#TUPLAS
+
+tuple1 = ("Gustavo García", "Masculino", 24564955, '5/6/1966', "Santa Rosa")
+
+tuple2 = ("Javier Fernández", "Masculino", 30581769, '14/8/1985', "Bahía Blanca")
+
+tuple3 = ("Valentina Romero", "Femenino", 32895411, '9/10/1989', "Rosario")
+
+Lista_tuplas = [tuple1,tuple2,tuple3]
+print(Lista_tuplas)
+
+
+
+
+#DICCIONARIOS
+
+Diccionario = {17583795 : "Antonio", 18675288 : "Iris", 38397527 : "Ariel"}
+print(Diccionario)
+
+#añadir datos
+
+Diccionario[9684921] = "José"
+Diccionario[10589461] = "Víctor"
+print(Diccionario)
+
+Diccionario2 = {"Juan Pérez" : 3518739946, "Victoria Carrizo" : 113775016, "Agustina Díaz" : 3418006458, "Martín Flores" : 29205637886}
+
+print(Diccionario2.keys())
+print(Diccionario2.values())
+print(Diccionario2.items())
