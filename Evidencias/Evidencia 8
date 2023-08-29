@@ -1,0 +1,60 @@
+#1
+
+numero = int(input('ingrese un número: '))
+
+if numero == 10:
+    print('¡Usted ha ganado el sorteo!')
+
+
+
+#2
+
+elif numero < 10:
+    print('¡Falto un poco, seguí participando!')
+
+elif numero > 10:
+    print('¡Te pasaste, a seguir intentándolo!')
+ 
+else:
+    print('número inexistente')
+
+
+
+#3
+
+dia = str(input('ingrese un día de la semana: '))
+
+if dia == 'lunes':
+    print('Buen comienzo de semana')
+
+elif dia == 'viernes':
+    print('Último día hábil de la semana')
+
+elif dia == 'sábado':
+    print('Buen fin de semana')
+
+elif dia == 'domingo':
+    print('Buen fin de semana')
+
+else:
+    dia == 'martes''miércoles''jueves'
+    print('Esta mediando la semana')
+
+
+#4
+
+str = str(input('ingrese una letra: '))
+
+if str == "A":
+    print('Es una vocal')
+elif str == 'E':
+    print('Es una vocal')
+elif str == 'I':
+    print('Es una vocal')
+elif str == 'O':
+    print('Es una vocal')
+elif str == 'U':
+    print('Es una vocal')
+
+else:
+    print('No es una vocal')
