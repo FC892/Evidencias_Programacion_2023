@@ -1,0 +1,63 @@
+#1
+
+suma = 0
+numero = int(input("Digite un número (-1 para terminar): "))
+while numero != -1:
+    suma += numero
+    numero = int(input("Digite un número (-1 para terminar): "))
+print(f"La sumatoria de los numeros es: {suma}")
+
+
+
+#2
+
+cantidad = int(input("Digite la cantidad de números: "))
+mayores = 0
+menores = 0
+iguales = 0
+
+for _ in range(cantidad):
+    numero = int(input("Digite un número: "))
+    if numero > 0:
+        mayores += 1
+    elif numero < 0:
+        menores += 1
+    else:
+        iguales += 1
+
+print(f"Mayores a 0: {mayores}")
+print(f"Menores a 0: {menores}")
+print(f"Iguales a 0: {iguales}")
+
+
+
+#3
+
+letra = input("Digite una letra: ")
+
+if letra.lower() in 'a,e,i,o,u':
+    print("VOCAL")
+else:
+    print("NO VOCAL")
+
+
+
+#4
+
+contador = 0
+
+suma = 0
+
+numero = float(input("Digite un número (0 para terminar): "))
+
+while numero != 0:
+    suma += numero
+    contador += 1
+    numero = float(input("Digite un número (0 para terminar): "))
+
+if contador > 0:
+    media = suma / contador
+    print(f"La suma numérica es: {suma}")
+    print(f"La media númerica es: {media}")
+else:
+    print("No se ingresaron números.")
