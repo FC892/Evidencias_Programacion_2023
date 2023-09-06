@@ -1,0 +1,315 @@
+class Curso:
+
+     def __init__(self, nombre_curso, fecha_de_inicio, titulo, descripcion, objetivo, programa, costo, duracion_en_meses, foto, estado, categoria):
+        self.nombre_curso = nombre_curso
+        self.fecha_de_inicio = fecha_de_inicio
+        self.titulo = titulo
+        self.descripcion = descripcion
+        self.objetivo = objetivo
+        self.programa = programa
+        self.costo = costo
+        self.duracion_en_meses = duracion_en_meses
+        self.foto = foto
+        self.estado = estado
+        self.categoria = categoria
+
+    def get_nombre_curso(self):
+        return self.__nombre_curso
+
+    def set_nombre_curso(self, nombre_curso):
+        self.nombre_curso = nombre_curso 
+    
+    
+    def get_fecha_de_inicio(self):
+        return self.__fecha_de_inicio
+    
+    def set_fecha_de_inicio(self, fecha_de_inicio):
+        self.__fecha_de_inicio = fecha_de_inicio
+
+
+    def get_titulo(self):
+        return self.__titulo
+    
+    def set_titulo(self, titulo):
+        self.__titulo = titulo
+
+
+    def get_descripcion(self):
+        return self.__descripcion
+    
+    def set_descripcion(self, descripcion):
+        self.__descripcion = descripcion
+
+
+    def get_objetivos(self):
+        return self.__objetivos
+    
+    def set_objetivos(self, objetivos):
+        self.__objetivos = objetivos
+
+
+    def get_programa(self):
+        return self.__programa
+    
+    def set_programa(self, programa):
+        self.__programa = programa
+
+
+    def get_costo(self):
+        return self.__costo
+    
+    def set_costo(self, costo):
+        self.__costo = costo
+    
+
+    def get_duracion_en_meses(self):
+        return self.__duracion_en_meses
+    
+    def set_duracion_en_meses(self, duracion_en_meses):
+        self.__duracion_en_meses = duracion_en_meses
+
+
+    def get_foto(self):
+        return self.__foto
+    
+    def set_foto(self, foto):
+        self.__foto = foto
+
+
+    def get_estado(self):
+        return self.__estado
+    
+    def set_estado(self, estado):
+        self.__estado = estado
+
+    def get_categoria(self):
+        return self.__categoria
+    
+    def set_categoria(self, categoria):
+        self.__categoria = categoria
+
+
+    def imprimir_datos(self):
+        print(f'fecha_de_inicio: {self.get_fecha_de_inicio()}')
+        print(f'titulo: {self.get_titulo()}')
+        print(f'descripcion: {self.get_descripcion()}')
+        print(f'objetivos: {self.get_objetivos()}')
+        print(f'programa: {self.get_programa()}')
+        print(f'costo: {self.get_costo()}')
+        print(f'duracion_en_meses: {self.get_duracion_en_meses()}')
+        print(f'foto: {self.get_foto()}')
+        print(f'estado: {self.get_estado()}')
+
+
+
+
+class clase:
+
+    def __init__(self, fecha, titulo, contenido, URL_drive):
+        self.fecha = fecha
+        self.titulo = titulo
+        self.contenido = contenido
+        self.URL_drive = URL_drive
+    
+
+    def get_fecha(self):
+        return self.fecha
+
+    def get_titulo(self):
+        return self.titulo
+
+    def get_contenido(self):
+        return self.contenido
+
+    def get_url_drive(self):
+        return self.url_drive
+
+
+    def set_fecha(self, fecha):
+        self.fecha = fecha
+
+    def set_titulo(self, titulo):
+        self.titulo = titulo
+
+    def set_contenido(self, contenido):
+        self.contenido = contenido
+
+    def set_url_drive(self, url_drive):
+        self.url_drive = url_drive
+
+
+
+
+class Docente: 
+    
+    def __init__(self,id_docente, apellido, nombre, dni, fecha_nacimiento, direccion, localidad, codigo_postal, provincia, telefono_celular, email):
+        self.id_docente = id_docente
+        self.apellido = apellido
+        self.nombre = nombre
+        self.dni = dni
+        self.fecha_nacimiento = fecha_nacimiento
+        self.direccion = direccion
+        self.localidad = localidad
+        self.codigo_postal = codigo_postal
+        self.provincia = provincia
+        self.telefono_celular = telefono_celular
+        self.email = email
+
+    def get_id_docente(self):
+        return self.id_docente
+
+    def get_apellido(self):
+        return self.apellido
+
+    def get_nombre(self):
+        return self.nombre
+
+    def get_dni(self):
+        return self.dni
+
+    def get_fecha_nacimiento(self):
+        return self.fecha_nacimiento
+
+    def get_direccion(self):
+        return self.direccion
+
+    def get_localidad(self):
+        return self.localidad
+
+    def get_codigo_postal(self):
+        return self.codigo_postal
+
+    def get_provincia(self):
+        return self.provincia
+
+    def get_telefono_celular(self):
+        return self.telefono_celular
+
+    def get_email(self):
+        return self.email
+
+    def set_id_docente(self, id_docente):
+        self.id_docente = id_docente
+
+    def set_apellido(self, apellido):
+        self.apellido = apellido
+
+    def set_nombre(self, nombre):
+        self.nombre = nombre
+
+    def set_dni(self, dni):
+        self.dni = dni
+
+    def set_fecha_nacimiento(self, fecha_nacimiento):
+        self.fecha_nacimiento = fecha_nacimiento
+
+    def set_direccion(self, direccion):
+        self.direccion = direccion
+
+    def set_localidad(self, localidad):
+        self.localidad = localidad
+
+    def set_codigo_postal(self, codigo_postal):
+        self.codigo_postal = codigo_postal
+
+    def set_provincia(self, provincia):
+        self.provincia = provincia
+
+    def set_telefono_celular(self, telefono_celular):
+        self.telefono_celular = telefono_celular
+
+    def set_email(self, email):
+        self.email = email
+
+
+class Usuario_final:
+
+    def __init__(self,id_usuario_final, apellido, nombre, dni, fecha_nacimiento, direccion, localidad, codigo_postal, provincia, telefono_celular, email):
+
+        self.id_usuario_final = usuario_final
+        self.apellido = apellido
+        self.nombre = nombre
+        self.dni = dni
+        self.fecha_nacimiento = fecha_nacimiento
+        self.direccion = direccion
+        self.localidad = localidad
+        self.codigo_postal = codigo_postal
+        self.provincia = provincia
+        self.telefono_celular = telefono_celular
+        self.email = email
+        self.estado = 'Activo' or 'Inactivo'
+
+
+    def get_id_usuario_final(self):
+        return self.id_usuario_final
+
+    def get_apellido(self):
+        return self.apellido
+
+    def get_nombre(self):
+        return self.nombre
+
+    def get_dni(self):
+        return self.dni
+
+    def get_direccion(self):
+        return self.direccion
+
+    def get_fecha_nacimiento(self):
+        return self.fecha_nacimiento
+
+    def get_localidad(self):
+        return self.localidad
+
+    def get_codigo_postal(self):
+        return self.codigo_postal
+
+    def get_provincia(self):
+        return self.provincia
+
+    def get_telefono_celular(self):
+        return self.telefono_celular
+
+    def get_email(self):
+        return self.email
+
+    def get_estado(self):
+        return self.estado
+
+
+
+    def set_id_usuario_final(self, id_usuario_final):
+        self.id_usuario_final = id_usuario_final
+
+    def set_apellido(self, apellido):
+        self.apellido = apellido
+
+    def set_nombre(self, nombre):
+        self.nombre = nombre
+
+    def set_dni(self, dni):
+        self.dni = dni
+
+    def set_direccion(self, direccion):
+        self.direccion = direccion
+
+    def set_fecha_nacimiento(self, fecha_nacimiento):
+        self.fecha_nacimiento = fecha_nacimiento
+
+    def set_localidad(self, localidad):
+        self.localidad = localidad
+
+    def set_codigo_postal(self, codigo_postal):
+        self.codigo_postal = codigo_postal
+
+    def set_provincia(self, provincia):
+        self.provincia = provincia
+
+    def set_telefono_celular(self, telefono_celular):
+        self.telefono_celular = telefono_celular
+
+    def set_email(self, email):
+        self.email = email
+
+    def set_estado(self, estado):
+        self.estado = estado
