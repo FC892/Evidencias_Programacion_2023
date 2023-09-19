@@ -1,0 +1,42 @@
+Import clases
+
+class compra:
+        
+     def __init__(self, Id_Compra, Id_Carrito_Compra, Id_Medios_Pago, Id_Usuario, Fecha, Monto_total):
+            
+        self.Id_compra = Id_Compra
+        self.Id_Carrito_Compra = Id_Carrito_Compra
+        self.Id_Medios_Pago = Id_Medios_Pago
+        self.Id_Usuario = Id_Usuario
+        self.Fecha = Fecha
+        self.Monto_total = Monto_total
+
+
+from enum import Enum
+
+class Tipos_Medios_Contacto(Enum):
+    
+    WhatsApp = ("WhatsApp", 1)
+    Correo_electrónico = ("Correo_electrónico", 2)
+    Call_center = ("Call_center", 3)
+    Referido_interno = ("Referido_interno", 4)
+
+    def __init__(self, WhatsApp, Correo_electrónico, Call_center, Referido_interno):
+
+            self.WhatsApp = WhatsApp
+            self.Correo_electrónico = Correo_electrónico
+            self.Call_center =  Call_center
+            self.Referido_interno = Referido_interno
+
+
+
+class Medios_de_contacto(Tipos_Medios_Contacto):
+
+    def __init__(self, Id_MedioContacto, Fecha, Email, Telefono, Direccion, Nombre):
+
+        self.Id_MedioContacto = Id_MedioContacto
+        self.Fecha = Fecha
+        self.Email = Email
+        self.Telefono = Telefono
+        self.Direccion = Direccion
+        self.Nombre = Nombre
